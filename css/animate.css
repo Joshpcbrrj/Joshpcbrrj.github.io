@@ -471,7 +471,7 @@
   animation-name: tada;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+/* Autor original: Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes wobble {
   from {
@@ -3337,4 +3337,28 @@
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
+}
+
+/*Formatndo os links do portifólio*/
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Espaçamento acima dos links adicionais */
+  margin-bottom: 30px; /* Espaçamento abaixo dos links adicionais */
+}
+
+#lrepo, #lproj {
+  padding: 5px 10px;
+  margin: 0 10px;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#lrepo {
+  color: #2e72ca;
+}
+
+#lproj {
+  color: black;
 }
