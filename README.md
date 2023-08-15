@@ -11,9 +11,9 @@ Este currículo foi desenvolvido com base no repositório fornecido pela Geek Un
 
 #### Referências
 *  <a href="https://www.udemy.com/course/curso-de-git-e-github-essencial/" target="_blank">Curso de Git e Github Essencial para o Desenvolvedor</a>
- 
 * <a href="https://github.com/felicityBR/felicitybr.github.io" target="_blank">Repositório Base para o curriculo</a>
 
 <br>
+
 
 Fique à vontade para explorar meu currículo e entrar em contato caso deseje discutir oportunidades de colaboração.
