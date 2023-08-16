@@ -6,7 +6,7 @@
 
 ## Acesse Meu Currículo
 Você pode visualizar meu currículo online através do seguinte link:
-<a href="https://joshpcbrrj.github.io" target="_blank">https://joshpcbrrj.github.io</a>
+<a href="https://joshpcbrrj.github.io" target="_blank">Meu curriculo</a>
 
 ### Sobre
 Este currículo foi desenvolvido com base no repositório fornecido pela Geek University, juntamente com o conteúdo do curso. Ele reflete minhas habilidades, experiências e projetos relevantes.
