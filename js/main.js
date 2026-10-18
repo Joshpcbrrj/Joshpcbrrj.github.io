@@ -2,7 +2,6 @@
   'use strict';
 
   const root = document.documentElement;
-  root.classList.add('js');
 
   // Tema claro/escuro
   const themeToggle = document.querySelector('.theme-toggle');
@@ -36,8 +35,11 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // Animação de entrada e link ativo no menu
+  // Animação de entrada e link ativo no menu.
+  // A classe "js" (que esconde os elementos até animar) só é ligada aqui, junto com o observer,
+  // para o conteúdo nunca ficar invisível se o script falhar.
   if ('IntersectionObserver' in window) {
+    root.classList.add('js');
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
