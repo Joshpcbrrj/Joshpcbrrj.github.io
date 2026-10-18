@@ -1,473 +1,325 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="no-js">
+<html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Josué Balbino Almeida</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <meta name="description" content="Curriculum vitae Josué B. Almeida" />
-  <meta name="keywords" content="currículo, vitae, josué Balbino Almeida, git, github" />
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-  <link rel="stylesheet" href="css/normalize.css" type="text/css">
-  <link rel="stylesheet" href="css/animate.css" type="text/css">
-  <link rel="stylesheet" href="css/transition-animations.css" type="text/css">
-  <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
-  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-  <link rel="stylesheet" href="css/main-blue.css" type="text/css">
-  <script src="js/jquery-2.1.3.min.js"></script>
-  <script src="js/modernizr.custom.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Josué Balbino Almeida · Desenvolvedor Back-End Java</title>
+  <meta name="description" content="Desenvolvedor Back-End Java no Rio de Janeiro, com experiência em Spring Framework, APIs RESTful e integração de sistemas.">
+  <meta name="author" content="Josué Balbino Almeida">
+  <meta name="theme-color" content="#0b1020">
+
+  <!-- Open Graph (prévia ao compartilhar o link no LinkedIn/WhatsApp) -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Josué Balbino Almeida · Desenvolvedor Back-End Java">
+  <meta property="og:description" content="Java, Spring Framework, APIs RESTful e integração de sistemas.">
+  <meta property="og:url" content="https://joshpcbrrj.github.io/">
+  <meta property="og:image" content="https://joshpcbrrj.github.io/images/josue.jpg">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Aplica o tema salvo antes da renderização para evitar "piscar" -->
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
 </head>
 
-<body class="material-template">
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <!-- Animação de Carregamento -->
-  <div class="preloader">
-    <div class="preloader-animation">
-      <div class="preloader-spinner">
-      </div>
-    </div>
-  </div>
-   <!-- /Animação de Carregamento -->
+  <!-- Cabeçalho -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="#inicio" class="logo">&lt;Josué<span>/</span>&gt;</a>
 
-  <div id="page" class="page">
-    
-     <!-- Cabeçalho -->
-    <header id="site_header" class="header mobile-menu-hide">
-      <div class="header-content">
-        <div class="site-title-block mobile-hidden">
-          <a href="index.html#home">
-            <div class="site-title">Josué <span>Balbino Almeida</span></div>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul id="menu" class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <button class="theme-toggle" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- Hero -->
+    <section id="inicio" class="hero container">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Olá, eu sou</p>
+        <h1>Josué Balbino Almeida</h1>
+        <p class="role"><span class="mono">&gt;</span> Desenvolvedor <strong>Back-End Java</strong><span class="cursor" aria-hidden="true">_</span></p>
+        <p class="lead">
+          Desenvolvedor Java com experiência em <strong>Spring Framework</strong>, <strong>APIs RESTful</strong>
+          e integração de sistemas.
+        </p>
+        <div class="cta">
+          <a href="cv/resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>
+            Baixar currículo
           </a>
+          <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
         </div>
+        <ul class="social">
+          <li><a href="https://github.com/Joshpcbrrj" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
+          </a></li>
+          <li><a href="https://www.linkedin.com/in/josualmeida/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+          </a></li>
+          <li><a href="mailto:joshpcbrrj@gmail.com" aria-label="E-mail">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          </a></li>
+        </ul>
+      </div>
 
-        <!-- Navegação -->
-        <div class="site-nav">
-          <ul id="nav" class="site-main-menu">
-            <li>
-              <a class="pt-trigger" href="index.html#home">Início</a>
-            </li>
-            <li>
-              <a class="pt-trigger" href="index.html#resume">Currículo</a>
-            </li>
-            <li>
-              <a class="pt-trigger" href="index.html#portfolio">Portfólio</a>
-            </li>
+      <div class="hero-photo reveal">
+        <div class="photo-frame">
+          <img src="images/josue.jpg" alt="Foto de Josué Balbino Almeida" width="640" height="640">
+        </div>
+        <div class="badge badge-1"><span class="mono">@SpringBootApplication</span></div>
+        <div class="badge badge-2">📍 Rio de Janeiro</div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section container">
+      <h2 class="section-title reveal"><span class="mono">01.</span> Sobre mim</h2>
+      <div class="about">
+        <div class="about-text reveal">
+          <p>
+            Desenvolvedor Java com experiência em <strong>Spring Framework</strong>, <strong>APIs RESTful</strong>
+            e integração de sistemas. Atuei como Desenvolvedor Java na <strong>GX2 Tecnologia</strong> em projeto
+            de 500 mil usuários e atualmente estou como Técnico de Suporte N2 na <strong>Hepta Tecnologia</strong>.
+          </p>
+          <p>
+            Busco recolocação como <strong>Desenvolvedor Back-End ou Full Stack</strong>.
+          </p>
+        </div>
+        <ul class="stats reveal">
+          <li><strong>500 mil</strong><span>usuários no projeto Unimed PJ</span></li>
+          <li><strong>+30%</strong><span>em performance com otimização de SQL e refatoração</span></li>
+          <li><strong>&gt; 95%</strong><span>de SLA em chamados N2</span></li>
+          <li><strong>4.000+</strong><span>usuários administrados no Active Directory</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Experiência -->
+    <section id="experiencia" class="section container">
+      <h2 class="section-title reveal"><span class="mono">02.</span> Experiência</h2>
+      <ol class="timeline">
+        <li class="reveal">
+          <div class="tl-head">
+            <h3>Desenvolvedor Back-End Java</h3>
+            <span class="period">fev/2024 – nov/2025</span>
+          </div>
+          <p class="company">GX2 Tecnologia</p>
+          <ul>
+            <li>Desenvolvi back-end Java/Spring no ecossistema Liferay para Unimed PJ (impacto: 500 mil usuários).</li>
+            <li>Criei APIs RESTful documentadas no Swagger e testadas no Postman.</li>
+            <li>Versionamento com GitLab, gestão no Azure DevOps e squads Scrum.</li>
+            <li>Otimização de SQL e refatoração: +15% em entregas e +30% em performance.</li>
           </ul>
-        </div>
+          <ul class="tags"><li>Java</li><li>Spring</li><li>Liferay</li><li>REST</li><li>Swagger</li><li>SQL</li><li>GitLab</li><li>Azure DevOps</li></ul>
+        </li>
+
+        <li class="reveal">
+          <div class="tl-head">
+            <h3>Técnico de Suporte Nível II</h3>
+            <span class="period">fev/2025 – atual</span>
+          </div>
+          <p class="company">Hepta Tecnologia</p>
+          <ul>
+            <li>Resolvo chamados N2 com SLA &gt; 95% para Correios, utilizando ferramentas ITSM.</li>
+            <li>Configuro redes (Cisco), cabeamento estruturado e realizo manutenção de hardware.</li>
+            <li>Administro Active Directory e servidores Windows/Linux.</li>
+          </ul>
+        </li>
+
+        <li class="reveal">
+          <div class="tl-head">
+            <h3>Técnico de Suporte Nível II</h3>
+            <span class="period">fev/2023 – jan/2024</span>
+          </div>
+          <p class="company">Hepta Tecnologia</p>
+          <ul>
+            <li>Atendimento remoto/presencial com 90% de resolução na 1ª chamada.</li>
+            <li>Cabeamento estruturado e switches/roteadores Cisco (redução de 25% em falhas).</li>
+          </ul>
+        </li>
+
+        <li class="reveal">
+          <div class="tl-head">
+            <h3>Freelancer em Infraestrutura e Web</h3>
+            <span class="period">jan/2021 – jan/2023</span>
+          </div>
+          <p class="company">Autônomo (MEI)</p>
+          <ul>
+            <li>Desenvolvi sites com React/Node.js para clientes como Planac e 3am.</li>
+            <li>Administrei servidores Linux com backups automatizados e 99,9% de uptime.</li>
+          </ul>
+          <ul class="tags"><li>React</li><li>Node.js</li><li>Linux</li></ul>
+        </li>
+
+        <li class="reveal">
+          <div class="tl-head">
+            <h3>Analista Júnior em Infraestrutura</h3>
+            <span class="period">out/2018 – dez/2021</span>
+          </div>
+          <p class="company">Atento Brasil</p>
+          <ul>
+            <li>Administração de 4.000+ usuários no Active Directory, com governança, políticas de segurança e gestão de permissões.</li>
+            <li>Configuração de VPN para migração home office (100% da equipe em 15 dias).</li>
+            <li>Configuração de switches/roteadores Cisco, cabeamento estruturado (+30% conectividade) e monitoramento com Zabbix.</li>
+            <li>Implementação de backups (Windows/Linux) com redução de RTO em 50%.</li>
+            <li>Configuração de sistemas de CFTV e controles de acesso para segurança patrimonial.</li>
+          </ul>
+        </li>
+
+        <li class="reveal">
+          <div class="tl-head">
+            <h3>Suporte de Informática</h3>
+            <span class="period">fev/2014 – out/2015</span>
+          </div>
+          <p class="company">Cecip</p>
+          <ul>
+            <li>Suporte técnico para eventos institucionais com públicos de até 500 pessoas.</li>
+            <li>Gerenciamento de servidores, redes e dispositivos de áudio/vídeo em Windows, Linux e Mac.</li>
+            <li>Montagem, manutenção e formatação de computadores para disponibilidade imediata.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="section container">
+      <h2 class="section-title reveal"><span class="mono">03.</span> Habilidades</h2>
+      <div class="skills">
+        <article class="card reveal">
+          <h3><span class="dot dot-1"></span>Desenvolvimento</h3>
+          <ul class="chips"><li>Java</li><li>Spring Framework</li><li>APIs RESTful</li><li>SQL</li><li>React</li><li>Node.js</li></ul>
+        </article>
+        <article class="card reveal">
+          <h3><span class="dot dot-2"></span>DevOps &amp; Automação</h3>
+          <ul class="chips"><li>Docker</li><li>Kubernetes</li><li>Git (GitLab/GitHub)</li><li>Azure DevOps</li><li>Shell Script</li><li>AWS EC2</li></ul>
+        </article>
+        <article class="card reveal">
+          <h3><span class="dot dot-3"></span>Infraestrutura &amp; Redes</h3>
+          <ul class="chips"><li>Linux/Windows Server</li><li>Active Directory</li><li>Cisco</li><li>DNS</li><li>DHCP</li><li>VPN</li><li>Cabeamento estruturado</li></ul>
+        </article>
+        <article class="card reveal">
+          <h3><span class="dot dot-4"></span>Suporte &amp; Field Service</h3>
+          <ul class="chips"><li>Atendimento N2</li><li>SLA</li><li>ITSM</li><li>Hardware</li><li>CFTV</li></ul>
+        </article>
       </div>
-      <!-- Fim Navegação -->
+      <p class="note reveal">Idiomas: <strong>inglês técnico</strong> (leitura e compreensão de documentação).</p>
+    </section>
 
-    </header>
-     <!-- / Fim Cabeçalho -->
-
-    <!-- Cabeçalho para Dispositivos Móveis -->
-    <div class="mobile-header mobile-visible">
-      <div class="mobile-logo-container">
-        <div class="mobile-site-title">Josué Balbino Almeida</div>
+    <!-- Formação -->
+    <section id="formacao" class="section container">
+      <h2 class="section-title reveal"><span class="mono">04.</span> Formação &amp; cursos</h2>
+      <div class="education">
+        <article class="card edu-main reveal">
+          <span class="period">2025 – 2027 · cursando</span>
+          <h3>Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
+          <p class="company">Universidade Estácio de Sá</p>
+        </article>
+        <ul class="courses">
+          <li class="card reveal">
+            <span class="period">2024 · cursando</span>
+            <h3>Desenvolvedor Full Stack Java</h3>
+            <p class="company">EBAC</p>
+          </li>
+          <li class="card reveal">
+            <span class="period">2023</span>
+            <h3>Java Developer</h3>
+            <p class="company">DIO · Spring, APIs RESTful</p>
+          </li>
+          <li class="card reveal">
+            <span class="period">2014</span>
+            <h3>Desenvolvimento Web e criação de sites</h3>
+            <p class="company">Senac · HTML, CSS, JavaScript</p>
+          </li>
+          <li class="card reveal">
+            <span class="period">2014</span>
+            <h3>Infraestrutura e SO</h3>
+            <p class="company">Forsoft Rio · Cisco, Active Directory, Linux/Windows</p>
+          </li>
+        </ul>
       </div>
+    </section>
 
-      <a class="menu-toggle mobile-visible">
-        <i class="fa fa-bars"></i>
-      </a>
+    <!-- Projetos -->
+    <section id="projetos" class="section container">
+      <h2 class="section-title reveal"><span class="mono">05.</span> Projetos</h2>
+      <p class="section-sub reveal">Atualizado automaticamente a partir do meu GitHub.</p>
+
+      <!-- Galeria preenchida por js/main.js com os repositórios públicos do GitHub -->
+      <ul class="filters" id="project-filters" aria-label="Filtrar por linguagem" hidden></ul>
+      <div class="projects" id="project-grid" aria-live="polite">
+        <div class="card project skeleton" aria-hidden="true"></div>
+        <div class="card project skeleton" aria-hidden="true"></div>
+        <div class="card project skeleton" aria-hidden="true"></div>
+      </div>
+      <p class="projects-more">
+        <a href="https://github.com/Joshpcbrrj?tab=repositories" target="_blank" rel="noopener" class="btn btn-ghost">Ver perfil completo no GitHub ↗</a>
+      </p>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section container">
+      <div class="contact card reveal">
+        <h2><span class="mono">06.</span> Vamos conversar?</h2>
+        <p>Estou em busca de oportunidades como Desenvolvedor Back-End ou Full Stack. Fale comigo pelo canal que preferir.</p>
+        <ul class="contact-list">
+          <li><a href="mailto:joshpcbrrj@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            joshpcbrrj@gmail.com</a></li>
+          <li><a href="https://wa.me/5521979142434" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+            (21) 97914-2434</a></li>
+          <li><a href="https://www.linkedin.com/in/josualmeida/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+            linkedin.com/in/josualmeida</a></li>
+          <li><a href="https://github.com/Joshpcbrrj" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
+            github.com/Joshpcbrrj</a></li>
+        </ul>
+        <a href="cv/resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">Baixar currículo em PDF</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="ano">2026</span> Josué Balbino Almeida · Feito com HTML, CSS e JavaScript</p>
+      <a href="#inicio" class="to-top">Voltar ao topo ↑</a>
     </div>
-    <!-- Fim Cabeçalho para Dispositivos Móveis -->
-
-    <!-- Conteúdo Principal -->
-    <div id="main" class="site-main">
-
-      <!-- Wrapper para Troca de Páginas -->
-      <div class="pt-wrapper">
-        
-        <!-- Subpáginas -->
-        <div class="subpages">
-
-          <!-- Subpágina Inicial -->
-          <section class="pt-page" data-id="home">
-            <div class="section-inner start-page-content">
-              <div class="page-header">
-                <div class="row">
-                  <div class="col-sm-4 col-md-4 col-lg-4">
-                    <div class="photo">
-                      <img src="images/Josue.png" alt="Imagem de Josué B. Almeida">
-                    </div>
-                  </div>
-
-                  <div class="col-sm-8 col-md-8 col-lg-8">
-                    <div class="title-block">
-                      <h1>Josué Balbino Almeida</h1>
-                      <div class="owl-carousel text-rotation">
-                        <div class="item">
-                          <div class="sp-subtitle">Desenvolvedor Java</div>
-                        </div>
-                        <div class="item">
-                          <div class="sp-subtitle">Desenvolvedor Fullstack</div>
-                        </div>
-                        <div class="item">
-                          <div class="sp-subtitle">Desenvolvedor Mobile</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="social-links">
-                      <a href="mailto:joshpcbrrj@gmail.com" target="_blank"><i class="fa fa-gmail"></i></a>
-                      <a href="https://www.linkedin.com/in/josualmeida/" target="_blank"><i
-                          class="fa fa-linkedin"></i></a>
-                      <a href="https://www.instagram.com/your_username/" target="_blank"><i
-                          class="fa fa-instagram"></i></a>
-                      <a href="https://discord.com/users/935159810431791165" target="_blank"><i
-                          class="fa fa-discord"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="page-content">
-                <div class="row">
-
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="about-me">
-                      <div class="block-title">
-                        <h3>Quem <span>Sou?</span></h3>
-                      </div>
-                      <p>
-                        Saudações! Sou Josué, uma pessoa simples e apaixonada por música, games e tecnologia. Acredito
-                        no poder transformador da informação e tecnologia para melhorar vidas. Como entusiasta de
-                        tecnologia, estou sempre aprendendo e dominando novas ferramentas digitais. Minha habilidade em
-                        comunicação me permite conectar genuinamente com colegas e clientes, valorizando o trabalho em
-                        equipe e a colaboração para atingir resultados significativos.
-                      </p>
-                    </div>
-                    <div class="download-resume">
-                      <a href="cv/resume.pdf" class="btn btn-secondary" target="_blank">Download Currículo</a>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <ul class="info-list">
-                      <li><span class="title">Idade:</span><span class="value">32 anos</span></li>
-                      <li><span class="title">Nacionalidade:</span><span class="value">brasileiro</span></li>
-                      <li><span class="title">Cidade/Estado:</span><span class="value">Rio de Janeiro, RJ</span></li>
-                      <li><span class="title">E-mail:</span><span class="value">joshpcbrrj@gmail.com</span></li>
-                    </ul>
-
-                    <h3>Tecnologias que estudo e uso:</h3>
-                    <ul>
-                      <li>HTML/CSS</li>
-                      <li>JavaScript</li>
-                      <li>React</li>
-                      <li>Java</li>
-                      <li>Kotlin</li>
-                    </ul>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Fim da Subpágina Inicial -->
-
-          <!-- Subpágina de Currículo -->
-          <section class="pt-page" data-id="resume">
-            <div class="section-inner custom-page-content">
-              <div class="page-header color-1">
-                <h2>Currículo</h2>
-              </div>
-              <div class="page-content">
-                <div class="row">
-                  <div>
-
-                    <!--Inicio formação-->
-                    <div class="block">
-                      <div class="block-title">
-                        <h3>Formação:</h3>
-                      </div>
-
-                      <div class="timeline">
-                        <!-- Education 1 -->
-                        <div class="timeline-item">
-                          <h4 class="item-title">Análise e desenvolvimento de sistemas</h4>
-                          <span class="item-period">2019/ 2020</span>
-                          <span class="item-small">Universidade Estácio de Sá</span>
-                          <p class="item-description">Curso trancado.</p>
-                        </div>
-                        <!-- / Fim formação -->
-                      
-                      </div>
-                    </div>
-                  </div>
-
-                  <!--Inicio experiência-->
-                  <div>
-                    <div class="block">
-                      <div class="block-title">
-                        <h3>Experiência <span> profissional:</span></h3>
-                      </div>
-
-                      <div class="timeline">
-                        <div class="timeline-item">
-                          <h4 class="item-title">Freelancer infraestrutura e suporte/ programação</h4>
-                          <span class="item-period">Atual</span>
-                          <span class="item-small">Freelancer</span>
-                          <p class="item-description">Tenho uma trajetória diversificada, englobando tanto o campo de Suporte Técnico e Infraestrutura quanto a área de Desenvolvimento Colaborativo. Há três anos, atuo como freelancer, fornecendo suporte técnico de níveis N1 e N2 para clientes, com parcerias com empresas como Planac e 3am. Além disso, ofereço serviços de montagem e manutenção de computadores, atendendo às necessidades de clientes pessoalmente ou online por meio de anúncios. No universo da programação front-end, acumulo dois anos de experiência em projetos colaborativos de criação de páginas, utilizando tecnologias como HTML, CSS e React. Meu compromisso é sempre entregar soluções eficientes e de alta qualidade em todas as tarefas que assumo.</p>
-                        </div>
-
-                        <div class="timeline-item">
-                          <h4 class="item-title">Analista Jr. em Infraestrutura e suporte</h4>
-                          <span class="item-period">2019/ 2021</span>
-                          <span class="item-small">Atento Brasil</span>
-                          <p class="item-description">No âmbito do Suporte Técnico, forneci assistência direta aos usuários, solucionando questões envolvendo tanto hardware quanto software utilizados cotidianamente. Além disso, executei configurações em equipamentos de rede, incluindo switches e roteadores Cisco, visando a otimização da infraestrutura de rede. Como parte do Gerenciamento de Usuários, desempenhei a responsabilidade de administrar usuários por meio do Active Directory. Contribuí também em projetos de infraestrutura física, participando da expansão ou redução da rede de cabeamento de acordo com as demandas. Na área de Tratamento de Chamados, atendi solicitações tanto localmente quanto em regime de home office, assegurando respostas rápidas e soluções eficazes.</p>
-                        </div>
-
-                        <div class="timeline-item">
-                          <h4 class="item-title">Suporte de Informática</h4>
-                          <span class="item-period">2014/ 2015</span>
-                          <span class="item-small">Cecip (Centro de Criação de Imagem Popular)</span>
-                          <p class="item-description">Realizei a instalação e configuração de equipamentos de áudio e vídeo, facilitando as atividades criativas da equipe, além de gerenciar a manutenção dos servidores, incluindo os de arquivos dos funcionários e alunos, bem como o servidor Windows com Active Directory. Também fui responsável pela otimização dos dispositivos de acesso à rede, solucionando questões de conexão dos usuários da Nave do conhecimento.</p>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <!-- / Fim experiência -->
-
-                  <!--Inicio cursos-->
-                  <div>
-                    <div class="block">
-                      <div class="block-title">
-                        <h3>Qualificações/ <span> Cursos:</span></h3>
-                      </div>
-                      <div class="timeline">
-
-                        <div class="timeline-item">
-                          <h4 class="item-title">Udemy: Git e GitHub Essencial para o Desenvolvedor - 12 horas</h4>
-                          <span class="item-period">2023</span>
-                          <span class="item-small">Geek university</span>
-                          <p class="item-description">Curso gerenciamento, controle de versão e workflow completo com git e github.</p>
-                          <a href="https://github.com/Joshpcbrrj/Udemy-Geek_university-Git_GitHub-Essencial_para_o_Desenvolvedor" target="_blank" >Repositório que fiz com conteúdo do curso</a>
-                        </div>
-
-                        <div class="timeline-item">
-                          <h4 class="item-title">Santander coders: Web backend - 11 horas</h4>
-                          <span class="item-period">2023</span>
-                          <span class="item-small">Ada</span>
-                          <p class="item-description">Curso inicial da trilha backend onde foram abordados conceitos de git e versionamento, algoritmos, redes, banco de dados e introdução ao Java e orientação a objetos.</p>
-                          <a href="https://github.com/Joshpcbrrj/Santander_coders-web_back-end" target="_blank" >Repositório que fiz com conteúdo do curso</a>
-                        </div>
-
-                        <div class="timeline-item">
-                          <h4 class="item-title">Udemy: Algoritmo e lógica de programação do absoluto zero com Javascript - 18 horas</h4>
-                          <span class="item-period">2023</span>
-                          <span class="item-small">Cod3r</span>
-                          <p class="item-description">Curso de lógica de programação passao a passo com JS.</p>
-                          <a href="https://github.com/Joshpcbrrj/Udemy-Cod3r-Algoritmo_e_logica_de_programacao_do_zero_com_JS" target="_blank" >Repositório que fiz com conteúdo do curso</a>
-                        </div>
-
-                        <div class="timeline-item">
-                          <h4 class="item-title">Udemy/ youtube: Lógica de programação com Portugol studio - 7 horas</h4>
-                          <span class="item-period">2023</span>
-                          <span class="item-small">Boson treinamentos</span>
-                          <p class="item-description">Curso sobre os conceitos e aplicação de lógica de programação usando Portugol.</p>
-                          <a href="https://github.com/Joshpcbrrj/Udemy-Youtube-Boson_treinamentos-Logica_de_programacao_com_Portugol_studio" target="_blank" >Repositório que fiz com conteúdo do curso</a>
-                        </div>
-
-                        <div class="timeline-item">
-                          <h4 class="item-title">Udemy: Aprenda lógica de programação direto ao ponto - 4 horas</h4>
-                          <span class="item-period">2023</span>
-                          <span class="item-small">Intellectuale tecnologia e treinamento </span>
-                          <p class="item-description">Curso de aplicação de conceitos de lógica de programação usando o software Flowgorithm (Flowchart programming language).</p>
-                          <a href="https://github.com/Joshpcbrrj/Udemy-Intellectuale_tecnologia_e_treinamento-Aprenda_logica_de_programacao-Direto_ao_ponto" target="_blank" >Repositório que fiz com conteúdo do curso</a>
-                        </div>
-                        </div>
-
-                        <div class="timeline-item">
-                          <h4 class="item-title">Bootcamp Banco PAN Java Developer - 114 horas</h4>
-                          <span class="item-period">2023</span>
-                          <span class="item-small">DIO (Digital Innovation One)</span>
-                          <p class="item-description">Curso focado no estudo de algoritmos e orientação a objetos, banco de dados SQL e NoSQL, Spring Framework. e API Rest e RestFUL.</p>
-                          <a href="https://github.com/Joshpcbrrj/Dio-Banco_Pan-Java_developer" target="_blank" >Repositório que fiz com conteúdo do curso</a>
-                        </div>
-
-                        <div class="timeline-item">
-                          <h4 class="item-title">StartSe: Bootcamp Front-end developer - 100 horas</h4>
-                          <span class="item-period">2022</span>
-                          <span class="item-small">Tech academy</span>
-                          <p class="item-description">Curso focado na criação de páginas com HTML, CSS e JavaScript. Estudo de orientação a objetos com Javascript e NodeJS. Banco de dados relacional MySQL.</p>
-                          <a href="" target="_blank" id="c">Repositório que fiz com conteúdo do curso</a>
-                        </div>
-
-                        <div class="timeline-item">
-                          <h4 class="item-title">Curso de Infraestrutura e Sistemas Operacionais - 180 horas</h4>
-                          <span class="item-period">2013/2014</span>
-                          <span class="item-small">Forsoft Rio</span>
-                          <p class="item-description">Estudo do modelo TCP/IP, Active Directory e rotinas em sistemas Windows e Linux. Configuração de dispositivos de rede Cisco e simulações de rede no Packet Tracer.</p>
-                        </div>
-
-                        <div class="timeline-item">
-                          <h4 class="item-title">Curso de Web Designer - 90 horas</h4>
-                          <span class="item-period">2014</span>
-                          <span class="item-small">Senac Rio</span>
-                          <p class="item-description">Criação de páginas Web (usando HTML, CSS e JQuery) e edição de vídeos, ícones e outras mídias com pacote Adobe.</p>
-                        </div>
-
-                        <div class="timeline-item">
-                          <h4 class="item-title">Técnico em Informática - 70 horas</h4>
-                          <span class="item-period">2002</span>
-                          <span class="item-small">Cedaspy Rio</span>
-                          <p class="item-description">Curso de montagem e manutenção de micro e pacote Office.
-                          </p>
-                        </div>
-                       
-                      </div>
-                    </div>
-                  </div>
-                  <!--/ Fim cursos-->
-
-                <!-- Botão de Baixar Currículo -->
-                <div class="row">
-                  <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="block">
-                      <div class="center download-resume">
-                        <a href="cv/resume.pdf" class="btn btn-secondary" target="_blank">Download Currículo</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Fim Botão de Baixar Currículo -->
-
-              </div>
-            </div>
-          </section>
-          <!-- Fim da Subpágina de Currículo -->
-
-          <!-- Subpágina de Portfólio -->
-          <section class="pt-page" data-id="portfolio">
-            <div class="section-inner custom-page-content">
-              <div class="page-header color-1">
-                <h2>Portfólio</h2>
-              </div>
-              <div class="page-content">
-                <div class="portfolio-content">
-
-                  <!-- Filtros de Portfólio -->
-                  <ul id="portfolio_filters" class="portfolio-filters">
-                    <li class="active">
-                      <a class="filter btn btn-sm btn-link active" data-group="all">Tudo</a>
-                    </li>
-                    <li>
-                      <a class="filter btn btn-sm btn-link" data-group="web">Web</a>
-                    </li>
-                    <li>
-                      <a class="filter btn btn-sm btn-link" data-group="mobile">Mobile</a>
-                    </li>
-                    <li>
-                      <a class="filter btn btn-sm btn-link" data-group="api">API</a>
-                    </li>
-                    <li>
-                      <a class="filter btn btn-sm btn-link" data-group="backend">Backend</a>
-                    </li>
-                  </ul>
-                  <!--/ Fim Filtros de Portfólio -->
-
-                  <!--Grid Portfolio-->
-                  <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
-
-                    <!--Projetos Web-->
-                    <figure class="item" data-groups='["all", "web"]'>
-                      <a href="images/portfolio/1.jpg" class="lightbox" title="Teste Web">
-                        <img src="images/portfolio/1.jpg" alt="">
-                        <div>
-                          <h5 class="name">Teste Web</h5>
-                          <small>web</small>
-                        </div>
-                      </a>
-                      <div class="links">
-                        <a id="lrepo" href="https://www.google.com/" target="_blank">Página</a>
-                        <a id="lproj" href="https://www.google.com/" target="_blank">Repositório git</a>
-                      </div>
-                    </figure>
-                    <!--/ Fim Projetos Web-->
-
-                    <!--Projetos Mobile-->
-                    <figure class="item" data-groups='["all", "mobile"]'>
-                      <a href="images/portfolio/1.jpg" class="lightbox" title="Teste Mobile">
-                        <img src="images/portfolio/1.jpg" alt="">
-                        <div>
-                          <h5 class="name">Teste Mobile</h5>
-                          <small>Mobile</small>
-                        </div>
-                      </a>
-                      <div class="links">
-                        <a id="lrepo" href="https://www.google.com/" target="_blank">Página</a>
-                        <a id="lproj" href="https://www.google.com/" target="_blank">Repositório git</a>
-                      </div>
-                    </figure>
-                    <!--/ Fim Projetos Mobile-->
-
-                    <!--Projetos API-->
-                    <figure class="item" data-groups='["all", "api"]'>
-                      <a href="images/portfolio/1.jpg" class="lightbox" title="Teste API">
-                        <img src="images/portfolio/1.jpg" alt="">
-                        <div>
-                          <h5 class="name">Teste API</h5>
-                          <small>API</small>
-                        </div>
-                      </a>
-                      <div class="links">
-                        <a id="lrepo" href="https://www.google.com/" target="_blank">Página</a>
-                        <a id="lproj" href="https://www.google.com/" target="_blank">Repositório git</a>
-                      </div>
-                    </figure>
-                    <!--/ Fim Projetos API-->
-
-                    <!--Projetos Backend-->
-                    <figure class="item" data-groups='["all", "backend"]'>
-                      <a href="images/portfolio/1.jpg" class="lightbox" title="Teste Backend">
-                        <img src="images/portfolio/1.jpg" alt="">
-                        <div>
-                          <h5 class="name">Teste Backend</h5>
-                          <small>Backend</small>
-                        </div>
-                      </a>
-                      <div class="links">
-                        <a id="lrepo" href="https://www.google.com/" target="_blank">Página</a>
-                      </div>
-                    </figure>
-                    <!--/ Fim Projetos Backend-->
-
-                  </div>
-                  <!-- / Fim Grid Portfolio-->
-
-                </div>
-                <!-- / Fim Conteúdo Portfolio-->
-
-              </div>
-            </div>
-          </section>
-           <!-- Fim Subpágina de Portfólio -->
-
-        </div>
-      </div>
-      <!-- / Fim wrapper -->
-    </div>
-    <!-- / Fim conteúdo principal -->
-  </div>
-  <footer>
-    <div class="copyrights">&copy; Josué B. Almeida</div>
   </footer>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/pages-switcher.js"></script>
-  <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
-  <script type="text/javascript" src="js/validator.js"></script>
-  <script type="text/javascript" src="js/jquery.shuffle.min.js"></script>
-  <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
-  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-  <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
-  <script type="text/javascript" src="js/jquery.googlemap.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+
+  <script src="js/main.js" defer></script>
 </body>
 
 </html>
